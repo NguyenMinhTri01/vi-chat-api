@@ -9,7 +9,6 @@ const userSocket = (socket) => {
     jwt.verify(token, SECRETKEY, (err, decoded) => {
       if (!err) {
         socket.auth = true;
-        console.log("auth : ", socket.auth)
         socket.emit('auth_successful', {auth : true});
       }
     });
