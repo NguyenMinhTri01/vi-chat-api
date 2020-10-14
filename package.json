@@ -1,0 +1,32 @@
+{
+  "name": "vi-chat-api",
+  "version": "1.0.0",
+  "description": "Back-end project vi-chat",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "start:watch": "nodemon .",
+    "debug:watch": "DEBUG=* nodemon .",
+    "start:staging": "set NODE_ENV=staging& node .",
+    "start:local": "set NODE_ENV=local& nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguyenMinhTri01/vi-chat-api.git"
+  },
+  "author": "nguyen minh tri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NguyenMinhTri01/vi-chat-api/issues"
+  },
+  "homepage": "https://github.com/NguyenMinhTri01/vi-chat-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.8",
+    "socket.io": "^2.3.0"
+  }
+}
